@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(253, 246, 236);
+    font-family: "Montserrart", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product_card {
+    background-color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.image {
+    width: 50%;
+}
+
+.product_info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content1 {
+    letter-spacing: 0.5rem;
+    font-size: small;
+    color: gray;
+    margin-bottom: 10px;
+    line-height: 0vmax;
+    text-transform: uppercase;
+}
+
+.content2 {
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.content3 {
+    line-height: 1.5rem;
+    font-size: small;
+    margin: 0;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.price {
+    color: rgba(2, 107, 70, 0.849);
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: "Fraunces", serif;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.nprice {
+    color: grey;
+    font-size: small;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: rgba(2, 107, 70, 0.849);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: hsl(157, 65%, 16%);
+}
+
+.cart {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .image {
+        background-image: url(images/image-product-mobile.jpg);
+        width: 100%;
+        height: auto;
+    }
+
+    .product_info {
+        text-align: center;
+    }
+
+    .content1, .content2, .content3, .price, .nprice, .btn {
+        text-align: center;
+    }
+
+    .nprice {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
